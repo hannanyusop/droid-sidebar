@@ -1,16 +1,123 @@
 {
-  "posts": [
+  "sidebar": [
     {
-      "id": 1,
-      "title": "hello"
+      "role": "admin",
+      "data-management" : [
+        {
+          "name": "Well Intervention and Workover",
+          "title": "Well Intervention and Workover",
+          "bullet": false,
+          "child": [
+            {
+              "name": "SCE",
+              "title": "SCE",
+              "param": {},
+              "route": "/data-management/barrier-status"
+            },
+            {
+              "name": "Integrity Status",
+              "title": "Integrity Status",
+              "param": {},
+              "route": "/data-management/integrity-status"
+            },
+            {
+              "name": "PE Trending",
+              "title": "PE Trending",
+              "param": {},
+              "route": "/data-management/iwp/pe-trending"
+            },
+            {
+              "name": "Idle String Growth",
+              "title": "Idle String Growth",
+              "param": {},
+              "route": "/data-management/iwp/idle-string-growth"
+            },
+            {
+              "name": "HSE",
+              "title": "HSE",
+              "param": {},
+              "route": "/data-management/hse"
+            },
+            {
+              "name": "Resource",
+              "title": "Resource",
+              "param": {},
+              "route": "/data-management/resource"
+            },
+            {
+              "name": "Activity",
+              "title": "Activity",
+              "param": {},
+              "permissions": ["PermissionsConstants.MANAGE_ACTIVITY"]
+            },
+            {
+              "name": "Corrosion Analysis (MIT)",
+              "title": "Corrosion Analysis (MIT)",
+              "param": {},
+              "route": "/data-management/mit"
+            },
+            {
+              "name": "Management of Change (MOC)",
+              "title": "Management of Change (MOC)",
+              "param": {},
+              "route": "/data-management/moc"
+            },
+            {
+              "name": "Daily Operation Report (DOR)",
+              "title": "Daily Operation Report (DOR)",
+              "param": {},
+              "route": "/data-management/dor"
+            },
+            {
+              "name": "IWIM",
+              "title": "IWIM",
+              "param": {},
+              "route": "/data-management/iwim"
+            },
+            {
+              "name": "SCE Catalog",
+              "title": "SCE Catalog",
+              "param": {},
+              "route": "/data-management/sce-catalog"
+            }
+          ]
+        },
+        {
+          "name": "Money Of Day",
+          "title": "Money Of the Day",
+          "bullet": false,
+          "child": [
+            {
+              "name": "MOD",
+              "title": "MOD",
+              "param": {},
+              "route": "/data-management/mod"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "world"
+      "role": "user",
+      "data-management" : [
+        {
+          "name": "Money Of Day",
+          "title": "Money Of the Day",
+          "bullet": false,
+          "child": [
+            {
+              "name": "MOD",
+              "title": "MOD",
+              "param": {},
+              "route": "/data-management/mod"
+            }
+          ]
+        }
+      ]
     }
   ],
   "profile": {
-    "name": "hannan",
-    "age": 30
+    "name": "HANANN YUSOP",
+    "role": "admin"
   }
 }
