@@ -95,6 +95,80 @@
             }
           ]
         }
+      ],
+      "configuration"    : [
+        {
+          "name": "Well Header Info",
+          "title": "Well Header Info",
+          "bullet": false,
+          "child": [
+            {
+              "name": "Region",
+              "title": "Configuration Region",
+              "param": {},
+              "route": "/configuration/region"
+            },
+            {
+              "name": "Well",
+              "title": "Configuration Well",
+              "param": {},
+              "route": "/configuration/well"
+            },
+            {
+              "name": "String",
+              "title": "Configuration String",
+              "param": {},
+              "route": "/configuration/string"
+            }
+          ]
+        },
+        {
+          "name": "Access Setting",
+          "title": "Access Setting",
+          "bullet": false,
+          "child": [
+            {
+              "name": "User",
+              "title": "Configuration User",
+              "param": {},
+              "route": "/configuration/user/list",
+              "onlyPermissions": ["P.STDS_USER_MANAGEMENT"]
+            },
+            {
+              "name": "Role",
+              "title": "Configuration Role",
+              "param": {},
+              "route": "/configuration/role",
+              "onlyPermissions": ["P.STDS_ROLE_MANAGEMENT", "P.ROLE_READ"]
+            },
+            {
+              "name": "Permission",
+              "title": "Configuration Permission",
+              "param": {},
+              "route": "/configuration/permission",
+              "onlyPermissions": ["P.STDS_ROLE_MANAGEMENT", "P.PERMISSION_READ"]
+            },
+            {
+              "name": "STDS",
+              "title": "Configuration STDS",
+              "param": {},
+              "route": "/configuration/stds",
+              "onlyPermissions": ["P.STDS_ASSIGN_USER"]
+            },
+            {
+              "name": "WIW",
+              "title": "WIW",
+              "param": {},
+              "route": "/configuration/dimh-permission"
+            },
+            {
+              "name": "Well Scheduler",
+              "title": "Well Scheduler",
+              "param": {},
+              "route": "/configuration/well-scheduler"
+            }
+          ]
+        }
       ]
     },
     {
@@ -113,7 +187,8 @@
             }
           ]
         }
-      ]
+      ],
+      "configuration"    : []
     }
   ],
   "profile": {
